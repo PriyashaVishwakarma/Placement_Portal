@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- Font Icon -->
+    <link rel="stylesheet" href="fonts/material-icon/css/material-design-iconic-font.min.css">
+
+    <!-- Main css -->
+    <link rel="stylesheet" href="css/style3.css">
+</head>
+<body>
+
+    <div class="main">
+        <div class="container">
+            <div class="signup-content">
+                <div class="signup-form">
+                    <form method="POST" class="register-form" id="register-form">
+                        <h2>PERSONAL DETAILS</h2>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="first_name">First Name :</label>
+                                <input type="text" name="first_name" id="first_name" required/>
+                            </div>
+                            <div class="form-group">
+                                <label for="last_name">Last Name :</label>
+                                <input type="text" name="last_name" id="last_name" required/>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone :</label>
+                            <input type="text" name="phone" id="phone" required/>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email :</label>
+                            <input type="email" name="email" id="email" required/>
+                        </div>
+                        <div class="form-group">
+                            <label for="address">Address :</label>
+                            <input type="text" name="address" id="address">
+                        </div>
+                        <label for="graduation">Graduation :</label>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <input type="text" name="gyear" placeholder="Year of Passing" id="gyear" required/>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" name="grad" placeholder="Course" id="grad" required/>
+                            </div>
+                        </div>
+                        <label for="postgraduation">Post Graduation :</label>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <input type="text" name="pgyear" placeholder="Year of Passing" id="pgyear" required/>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" name="pg" placeholder="Course" id="pg" required/>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <h2>Share Your Experience</h2>
+                            <textarea rows="10" cols="83" id="message"></textarea>
+                        </div>
+                        <div class="form-submit">
+                            <input type="submit" value="Reset All" class="submit" name="reset" id="reset" />
+                            <input type="submit" value="Submit Form" class="submit" name="submit" id="submit" />
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- JS -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- Font Icon -->
+    <link rel="stylesheet" href="fonts/material-icon/css/material-design-iconic-font.min.css">
+
+    <!-- Main css -->
+    <link rel="stylesheet" href="css/style3.css">
+</head>
+<body>
+
+    <div class="main">
+        <div class="container">
+            <div class="signup-content">
+                <div class="signup-form">
+                    <form method="POST" class="register-form" id="register-form">
+                        <h2>POST A JOB</h2>
+                        <div class="form-group">
+                            <label for="email">Your E-mail :</label>
+                            <input type="email" name="email" id="email" required/>
+                        </div>
+                        <div class="form-group">
+                            <label for="title">Job Title :</label>
+                            <input type="text" name="title" id="title" required/>
+                        </div>
+                        <div class="form-group">
+                            <label for="loc">Location :</label>
+                            <input type="text" name="loc" id="loc">
+                        </div>
+                        <div class="form-group">
+                            <label for="type">Job Type</label>
+                            <div class="form-select">
+                                <select name="type" id="type">
+                                    <option value=""></option>
+                                    <option value="ft">Full Time</option>
+                                    <option value="pt">Part Time</option>
+                                    <option value="in">Internship</option>
+                                    <option value="fl">Free Lance</option>
+                                </select>
+                                <span class="select-icon"><i class="zmdi zmdi-chevron-down"></i></span>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Job Description :</label>
+                            <textarea rows="10" cols="83" id="message"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="slaray">Salary :</label>
+                            <input type="text" name="salary" id="salary">
+                        </div>
+                        <div class="form-submit">
+                            <input type="submit" value="Reset All" class="submit" name="reset" id="reset" />
+                            <input type="submit" value="Submit Form" class="submit" name="submit" id="submit" />
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- JS -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
